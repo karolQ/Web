@@ -1,0 +1,62 @@
+.tabs{
+	margin-left: 50px;
+	width: 425px;
+}
+
+.tabs ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+}
+
+.tabs ul li{
+	float: left;
+}
+
+.tabs ul li a{
+	display:inline-block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition:0.3s;
+	font-size: 17px;
+}
+
+.tabs ul li a:hover{
+	background-color: #ddd;
+}
+
+.tabs ul li a:focus, .active{
+	background-color: #ccc;
+}
+
+.tabcontent{
+	display:none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: 0;
+	width: 400px;
+	height: 300px;
+	overflow: scroll;
+	background-size: cover;
+}
+.tabcontent h3, p{
+	background-color: rgba(255,255,255,0.5);
+	padding:8px;
+}
+
+#London{
+	background-image: url("http://www.imagewa.com/PhotoPreview/300/300_79251.jpg");
+}
+
+#Paris{
+	background-image: url("http://img04.tooopen.com/images/20121006/tooopen_201210061532105550.jpg");
+}
+
+#Tokyo{
+	background-image: url("http://img.epochtimes.com.tw/upload/images/2013/05/01/52317_medium.jpg");
+}
