@@ -52,7 +52,7 @@
 	color: black;
 	text-decoration: none;
 	padding: 12px 16px;
-	display:block;
+	display: block;
 }
 
 .dropdown-content a:hover{
@@ -60,5 +60,5 @@
 }
 
 .show{
-	display:block;
+	display: block;
 }
