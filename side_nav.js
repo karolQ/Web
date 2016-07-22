@@ -20,7 +20,7 @@ function myFunction(x){
 		for(j=0; j< mainBody.length;j++){
 			var ele = mainBody[j];
 			if(ele.classList.contains("push")){
-				ele.classList.remove("push");ß
+				ele.classList.remove("push");
 			}
 		}
 	}
