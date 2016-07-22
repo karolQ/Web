@@ -1,0 +1,89 @@
+.menu{
+	position: relative;
+	display: inline-block;
+}
+
+.menu_btn{	
+	cursor: pointer;
+}
+
+.menu_btn div{
+	width: 35px;
+	height: 5px;
+	background-color: black;
+	margin: 6px 0;
+}
+
+.bar1, .bar2, .bar3{
+	width: 35px;
+	height:5px;
+	background-color: #333;
+	margin:6px 0;
+	transition:0.3s;
+}
+
+/* Rotate first bar */
+.change .bar1{
+	-webkit-transform: rotate(-45deg) translate(-8px, 8px);
+	transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+/* Fade out the second bar */
+.change .bar2{
+	opacity: 0;
+}
+
+/* Rotate the last bar */
+.change .bar3{
+	-webkit-transform: rotate(45deg) translate(-8px, -8px);
+	tansform: rotate(45deg) translate(-8px, -8px);
+}
+
+.sidenav{
+	height:100%;
+	width:0;
+	position: fixed;
+	z-index: 1;
+	top: 50px;
+	left: 0;
+	background-color: #111;
+	overflow-x:hidden;
+	padding-top: 60px;
+	tansition:0.5s;
+}
+
+#mySidenav a{
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+#mySidenav a:hover, .offcanvas a:hover{
+	color: #f1f1f1;
+	background-color: rgba(0,0,0,0.4);
+}
+
+#main{
+	transition: margin-left 0.5s;
+	padding: 200px;
+	background-image:url("http://www.uksoftech.com/wp-content/uploads/2016/02/website-design-background.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.show{
+	width: 250px;
+}
+
+.push{
+	margin-left: 250px;ß
+}
+
+@media screen and(max-height: 450px){
+	.sidenav{padding-top: 15px;}
+	.sidenav a{font-size: 18px;}
+}
