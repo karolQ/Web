@@ -4,9 +4,9 @@ function myFunction(x){
 	document.getElementById("main").classList.toggle("push");
 }
 
-  window.onclick = function(event){
+  $('menu_btn').onclick = function(event){
 	if(!event.target.matches('.menu_btn')){
-		var sidenavs = document.getElementByClassName('sidenav');
+		var sidenavs = document.getElementsByClassName('sidenav');
 		var i;
 		for(i=0;i<sidenavs.length;i++){
 			var showSide = sidenavs[i];

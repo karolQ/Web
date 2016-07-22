@@ -3,7 +3,7 @@
 	display: inline-block;
 }
 
-.menu_btn{	
+.menu_btn{
 	cursor: pointer;
 }
 
@@ -49,7 +49,7 @@
 	background-color: #111;
 	overflow-x:hidden;
 	padding-top: 60px;
-	tansition:0.5s;
+	transition:0.5s;
 }
 
 #mySidenav a{
