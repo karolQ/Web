@@ -4,7 +4,7 @@ function myFunction(x){
 	document.getElementById("main").classList.toggle("push");
 }
 
-  $('menu_btn').onclick = function(event){
+$('menu_btn').onclick = function(event){
 	if(!event.target.matches('.menu_btn')){
 		var sidenavs = document.getElementsByClassName('sidenav');
 		var i;
@@ -24,4 +24,33 @@ function myFunction(x){
 			}
 		}
 	}
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n){
+	showSlides(slideIndex += n);
+}
+
+function currentSlide(n){
+	showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+	var k;
+	var slides = document.getElementsByClassName("#main mySlides");
+	var dots = document.getElementsByClassName("dot");
+	if(n > slides.length){
+		slideIndex = 1;}
+	else if(n < 1){
+		slideIndex = slides.length;}
+	for(k = 0; k < slides.length; k++){
+		slides[k].style.display = "none";
+	}
+	for(k = 0; k < slides.length; k++){
+		dots[k].className = dots[k].className.replace(" active", "");
+	}
+	slides[slideIndex-1].style.display="block";
+	dots[slideIndex-1].className += " active";
 }
